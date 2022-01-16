@@ -1,14 +1,14 @@
 
 # Goals
-This project aims to provide a full configuration to test the Kintsugi network with Brownie.
+This project aims to provide a complete Brownie configuration to test the Kintsugi network.
 
 # Requirements
 Brownie: see [installation page](https://eth-brownie.readthedocs.io/en/stable/install.html)
 
 # Conventions
 Lines starting with the `# ` prompt are shell commands (zsh or bash, ...)  
-Lines starting with the `>>> ` prompt are python/brownie commands
-Verbose output is omited
+Lines starting with the `>>> ` prompt are python/brownie commands  
+Verbose output is omited.
 
 # Testing Kintsugi with Brownie
 ```
@@ -17,6 +17,7 @@ Verbose output is omited
 ```
 
 ## Configure the network
+This command must be run only once, and the network will be available for all your Brownie projects.
 ```
 # brownie networks add Ethereum kintsugi \
     host=https://rpc.kintsugi.themerge.dev/ \
@@ -32,7 +33,7 @@ Verbose output is omited
 mnemonic: 'xxxxxxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx'
 <LocalAccount '0x10ca1ADD2E550000000000123456789000000000'>
 ```
-`LocalAccount` is your public address for the first account. You'll need later.  
+`LocalAccount` is your public address for the first account. You'll need it later.  
 Copy the mnemonic in a new `.env` file in current directory:
 ```
 # echo "export MNEMONIC='xxxxxxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx'" >> .env
