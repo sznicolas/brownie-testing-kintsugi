@@ -1,0 +1,5 @@
+dotenv: .env
+networks:
+  default: kintsugi
+wallets:
+  from_mnemonic: ${MNEMONIC}
