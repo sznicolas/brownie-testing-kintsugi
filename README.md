@@ -32,13 +32,13 @@ Verbose output is omited
 mnemonic: 'xxxxxxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx'
 <LocalAccount '0x10ca1ADD2E550000000000123456789000000000'>
 ```
-`LocalAccount` is your public address for the first accout. You'll need later.
+`LocalAccount` is your public address for the first account. You'll need later.  
 Copy the mnemonic in a new `.env` file in current directory:
 ```
-# echo "export MNEMONIC='xxxxxxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx'" > .env
+# echo "export MNEMONIC='xxxxxxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx'" >> .env
 # chmod 600 .env
 ```
-This mnemonic will allow us to create several addresses, we'll generate twoi of them.
+This mnemonic will allow us to create several addresses, we'll generate two of them.
 
 ## Get some ether
 Go to the [faucet](https://faucet.kintsugi.themerge.dev/) to get some test Ether.  
@@ -77,7 +77,7 @@ Transaction sent: 0xd380c5d75dc94cd34c02de9ccac2936da2f7cc76c44d8a3643103dc28198
 My contract updated!
 ```
 You can add `-i` after `run` if you want to stay in the console after the deployment.  
-You can also test locally before sending to Kintsugi by changing the `--network` value (development, mainnet-fork accordingly to your configuration)
+You can also test locally before sending to Kintsugi by changing the `--network` value (development, mainnet-fork depending on your configuration)
 
 # TODO
 Script some tests (exchange some ether between account[0] and a[1], interact with more advanced smart contracts, ...)
