@@ -11,12 +11,13 @@ Lines starting with the `>>> ` prompt are python/brownie commands
 Verbose output is omited.
 
 # Testing Kintsugi with Brownie
+## Get this repository
 ```
 # git clone https://github.com/sznicolas/brownie-testing-kintsugi
 # cd brownie-testing-kintsugi
 ```
 
-## Configure the network
+## Add Kintsugi network to Brownie
 This command must be run only once, and the network will be available for all your Brownie projects.
 ```
 # brownie networks add Ethereum kintsugi \
